@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Реклама/PR — BALUR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    font-family:'Raleway',sans-serif;
+    background:#ffffff;
+    color:#2a2118;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+  }
+
+  /* HEADER */
+  header{
+    border-bottom:1px solid #e8e0d8;
+    padding:0 40px;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .logo{
+    display:inline-flex;
+    align-items:center;
+    line-height:0;
+  }
+  .logo img{
+    height:30px;
+    width:auto;
+    display:block;
+  }
+
+  /* MAIN */
+  main{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:48px 24px;
+  }
+  .wrap{
+    max-width:480px;
+    width:100%;
+    text-align:center;
+  }
+
+  .eyebrow{
+    font-size:.72rem;
+    letter-spacing:.3em;
+    text-transform:uppercase;
+    color:#9a8a7e;
+    margin-bottom:24px;
+    font-weight:400;
+  }
+
+  h1{
+    font-family:'Playfair Display',serif;
+    font-size:2.2rem;
+    font-weight:400;
+    line-height:1.25;
+    color:#2a2118;
+    margin-bottom:16px;
+  }
+
+  .divider{
+    width:40px;height:1px;
+    background:#c8b8a8;
+    margin:22px auto;
+  }
+
+  p{
+    color:#7a6e66;
+    font-weight:300;
+    font-size:.95rem;
+    line-height:1.75;
+    margin-bottom:36px;
+  }
+
+  .spinner{
+    width:22px;height:22px;
+    margin:0 auto 28px;
+    border:1.5px solid #e8e0d8;
+    border-top-color:#2a2118;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  .btn{
+    display:inline-block;
+    background:#2a2118;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 44px;
+    font-family:'Raleway',sans-serif;
+    font-weight:500;
+    font-size:.85rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    transition:background .2s ease, transform .2s ease;
+    border-radius:100px;
+  }
+  .btn:hover{background:#3e3026;transform:translateY(-1px)}
+
+  .mailline{
+    margin-top:24px;
+    font-size:.83rem;
+    color:#9a8a7e;
+    font-weight:300;
+  }
+  .mailline a{
+    color:#2a2118;
+    text-decoration:none;
+    border-bottom:1px solid #c8b8a8;
+    padding-bottom:1px;
+  }
+  .mailline a:hover{border-bottom-color:#2a2118}
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid #e8e0d8;
+    text-align:center;
+    padding:20px;
+    font-size:.75rem;
+    letter-spacing:.08em;
+    color:#bbb0a6;
+    text-transform:uppercase;
+  }
+
+  @media(max-width:480px){
+    header{padding:0 20px}
+    h1{font-size:1.7rem}
+    .btn{padding:14px 32px}
+    .logo img{height:26px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="https://balur.beauty" aria-label="BALUR">
+    <img src="data:image/png;base64,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" alt="BALUR" width="61" height="30">
+  </a>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="eyebrow">Сотрудничество</div>
+    <div class="spinner" id="spinner"></div>
+    <h1>Реклама/PR</h1>
+    <div class="divider"></div>
+    <p>Сейчас откроется ваш почтовый клиент с готовым шаблоном заявки.<br>Если этого не произошло — нажмите кнопку ниже.</p>
+    <a class="btn" id="mailBtn" href="#">Написать нам</a>
+    <div class="mailline" style="margin-top:20px">или напишите напрямую: <a id="mailText" href="#">pr@balur.beauty</a></div>
+  </div>
+</main>
+
+<footer>© BALUR Beauty</footer>
+
+<script>
+  (function(){
+    var email = "pr@balur.beauty";
+    var body = [
+        "Имя: ",
+        "Никнейм / ссылка на профиль: ",
+        "Платформа (Instagram, Telegram, YouTube, TikTok, MAX): ",
+        "Количество подписчиков: ",
+        "Телефон или Email для связи: ",
+        "Формат сотрудничества (бартер / коммерческое размещение / амбассадорство / коллаборация / другое): "
+    ].join("\n");
+
+    var mailto = "mailto:" + email + "?body=" + encodeURIComponent(body);
+
+    document.getElementById("mailBtn").setAttribute("href", mailto);
+    document.getElementById("mailText").setAttribute("href", mailto);
+    document.getElementById("spinner").style.display = "block";
+
+    setTimeout(function(){
+      window.location.href = mailto;
+    }, 350);
+  })();
+</script>
+</body>
+</html>
